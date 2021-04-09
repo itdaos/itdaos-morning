@@ -1,0 +1,2 @@
+/usr/bin/xuserrun /bin/konsole -e nvlc ~/Music &
+gradincvol 35 85 

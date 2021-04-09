@@ -1,0 +1,15 @@
+#! /bin/bash
+
+PREDICT=$(date -d "8:00" +"%s")
+NOW=$(date -d "now" +"%s")
+
+if [ $PREDICT -gt $NOW ]; then 
+DATE=$(date -d "8:00" +"%s")
+elif [ $PREDICT -le $NOW ]; then
+DATE=$(date -d "next day 8:00" +"%s")
+fi
+
+echo "Going to sleep till "
+echo $(date -d @$DATE)
+sleep 10
+sudo rtcwake -m mem -t $DATE

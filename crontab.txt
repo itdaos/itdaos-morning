@@ -1,0 +1,1 @@
+05 08 * * 1-6 /bin/morningroutine

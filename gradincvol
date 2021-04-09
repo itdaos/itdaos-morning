@@ -1,0 +1,16 @@
+#! /bin/bash
+
+MIN=$1
+MAX=$2
+
+if [[ $MIN -lt 0 || $MIN -ge $MAX || $MAX -gt 100 ]]; then
+exit 1
+fi
+
+for (( i=$MIN; i<=$MAX; i++ ))
+do
+amixer -q set Master $i%
+sleep 2
+done
+
+exit 0
