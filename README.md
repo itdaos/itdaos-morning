@@ -11,4 +11,4 @@ This repo contains all the utility scripts that I use to wake up myself everyday
 
 Motivation and description of the repo is present in this [telegraph](https://telegra.ph/Pishem-korisn%D1%96-skripti-na-bash-04-09)
 
-Star this if you like the approach. ^_^
+Star this if you like the approach.
